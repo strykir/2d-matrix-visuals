@@ -1,0 +1,51 @@
+<title>
+  Visualizing matrix transformations in 2-space.
+</title>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>
+    Matrix Transformations in 2-space
+  </h1>
+  <h2 id="subtitle">Matrix and Vector Inputs</h2>
+  <div id = "matrix">
+    <p class = "braces" id = "matrixBraces">[&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp]</p>
+    <div class="flex-container" id = "matrixValues">
+      <input size = 5 class="matrixInputs" id="LU" value = 1 required></input>
+      <input size = 5 class="matrixInputs" id="RU" value = 0 required></input>
+      <input size = 5 class="matrixInputs" id="LD" value = 0 required></input>
+      <input size = 5 class="matrixInputs" id="RD" value = 1 required></input>
+    </div>
+  </div>
+  <div id = "matrixButtons">
+    <button onclick = "submitMatrix()"> Submit</button>
+    <button onclick = "resetMatrix()"> Reset </button>
+  </div>
+  <div id = "vector">
+    <p class = "braces" id = "vectorBraces">[&nbsp &nbsp &nbsp]</p>
+    <div class="flex-container" id = "vectorValues">
+      <input size = 5 class="vectorInputs" id="X" value = 1 required>
+      <input size = 5 class="vectorInputs" id="Y" value = 1 required>
+      </input>
+    </div>
+  </div>
+  <div id = "vectorButtons">
+    <button onclick = "submitVector()"> Submit</button>
+    <button onclick = "resetVector()"> Reset </button>
+  </div>
+  <div class = "flex-container" id = "actions"> 
+    <button class = "actionButtons" onclick = "animateTransformSpace()">Transform Vector Space</button>
+    <button class = "actionButtons" onclick = "resetSpaceToDefault()">Reset Space to Default</button>
+    <button class = "actionButtons" onclick = "animateTransformVector()">Transform Vector</button>
+  </div>
+  <div id = "status">
+    <p id = "statusText">test</p>
+  </div>
+  <canvas id = "cPlane" width="1000" height="1000"></canvas>
+  <canvas id = "drawnVector" width="1000" height="1000"></canvas>
+</body>

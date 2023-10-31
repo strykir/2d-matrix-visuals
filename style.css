@@ -1,0 +1,121 @@
+body{
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  position: relative;
+  left: 60px;
+}
+
+.braces{
+  font-size: 80px;
+  font-family: 'Lato', sans-serif;
+}
+
+#matrix {
+  position: absolute;
+  top: -130px;
+  left: 30px;
+}
+
+#matrixBraces{
+  position: relative;
+  top: 148px;
+  right: 17px;
+}
+
+.matrixInputs{
+  font-size: 18px;
+}
+
+#matrixButtons{
+  position: absolute;
+  top: 190px;
+  left: 62px;
+}
+
+#matrixValues {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 200px;
+}
+
+#vector{
+  position: absolute;
+  top: -130px;
+  left: 270px;
+}
+
+#vectorBraces{
+  position: relative;
+  top: 148px;
+  right: 17px;
+}
+
+#vectorValues{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 5px;
+}
+
+.vectorInputs{
+  font-size: 18px;
+}
+
+#vectorButtons{
+  position: absolute;
+  top: 190px;
+  left: 260px;
+}
+
+#actions{
+  position: absolute;
+  top: 250px;
+  left: 130px;
+  display:flex;
+  flex-direction: column;
+}
+
+.actionButtons{
+  padding: 5px;
+}
+
+#status{
+  border:1px solid #000000;
+  padding: 10px;
+  position: absolute;
+  top: 350px;
+  left: 100px;
+  width: 200px;
+  font-size: 18px;
+  text-align: center;
+}
+
+#cPlane{
+  border:1px solid #000000;
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  left: 400px;
+  top: 100px;
+}
+
+#drawnVector{
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  left: 400px;
+  top: 100px;
+}
+/* 
+top left corner: (400px, 100px)
+bottom right corner: (1400px, 1100px)
+*/
